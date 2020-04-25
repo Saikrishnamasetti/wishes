@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #counter {
+              font-size: 200px;
+              color: blue;
+              text-align: center;
+              height: 100%;
+              width: 100%;
+              vertical-align: middle;
+            }
+            #wish {
+              font-size: 75px;
+              color: #197DCA;
+              text-align: center;
+              height: 100%;
+              width: 100%;
+              vertical-align: middle;
+            }
+            #first {
+              font-size: 75px;
+              font-style: italic;
+              color: #197DCA;
+              text-align: center;
+              height: 100%;
+              width: 100%;
+              vertical-align: middle;
+            }
+        </style>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', () => {
+                setInterval(count, 250);
+            });
+
+            let counter = 1;
+
+            function count() {
+              if (counter===36) {
+                document.querySelector('#counter').innerHTML = "";
+                document.querySelector('#wish').innerHTML = "Wishng you a very happy 37Th Marriage Aniversary";
+                document.querySelector('#first').innerHTML = "Amma and Nanna";
+              }
+              else{
+                counter++;
+                document.querySelector('#counter').innerHTML = counter;
+            }
+          }
+        </script>
+        <title>My Website</title>
+    </head>
+    <body>
+        <h1 id="counter">1</h1>
+        <div id="wish"></div>
+        <div id="first"></div>
+        <img id="img" src="" alt="">
+    </body>
+</html>
